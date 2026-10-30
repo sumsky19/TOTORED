@@ -1,12 +1,11 @@
-토토레드 V5 테스트 패키지
+GitHub Pages upload instructions
 
-1) index.html을 브라우저에서 열어 확인할 수 있습니다.
-2) GitHub Pages 배포 시 index.html 하나만 저장소 최상위에 올려도 로고와 입점문의 배너가 표시됩니다. 이미지 데이터는 HTML 안에 포함되어 있습니다.
-3) 관리자 페이지의 배너 데이터는 현재 브라우저 localStorage에 저장되는 데모 방식입니다.
+1. Download this package and unzip it on your computer.
+2. Open the extracted folder. It contains index.html and this README.
+3. In your GitHub repository, open the branch/folder configured for GitHub Pages (often main / root).
+4. Choose Add file > Upload files and upload the extracted index.html (do NOT upload the ZIP itself).
+5. Commit changes.
+6. In Settings > Pages, confirm the publishing source points to the branch and folder where index.html was uploaded.
 
-V5 변경사항
-- 상단 메뉴 라우팅의 .hidden 표시 규칙 추가 및 hash/popstate 동작 보완
-- 홈의 '토토레드 이용 안내' 삭제
-- 홈 사이드바의 '최근 게시글' 삭제
-- 하단에 중복 노출되던 별도 입점문의 배너 삭제
-- 파트너 배너 영역의 빈 공간을 입점문의 이미지로 채움
+GitHub Pages looks for index.html at the top level of its publishing source folder.
+This index file is about 566 KB, below GitHub's 25 MiB browser upload limit.
