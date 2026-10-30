@@ -1,15 +1,19 @@
-모두온 V2 - GitHub Pages 배포용
+토토레드 데스크탑/모바일 프로토타입
 
-1) GitHub 저장소의 최상위(root)에 index.html을 업로드합니다.
-2) 저장소 Settings > Pages로 이동합니다.
-3) Build and deployment에서 Deploy from a branch를 선택합니다.
-4) Branch는 main, 폴더는 /(root)를 선택하고 Save를 누릅니다.
-5) 배포가 완료되면 Pages에 표시되는 주소로 접속합니다.
+실행 방법
+1. ZIP 압축을 풉니다.
+2. index.html 파일을 Chrome 또는 Edge로 엽니다.
+3. 상단 메뉴를 누르면 각 메뉴 화면으로 이동합니다.
+4. 관리자 메뉴에서 페이지별 광고 배너를 추가/삭제/순서 변경할 수 있습니다.
 
-중요:
-- 저장소 이름이 sumsky19.github.io라면 주소는 https://sumsky19.github.io/ 입니다.
-- 저장소 이름이 다른 경우 주소는 https://sumsky19.github.io/저장소이름/ 형태입니다.
-- 기존 파일명 moduon_reference_style_v2.html이 아니라 반드시 index.html을 저장소 최상위에 둡니다.
-- 배포 반영까지 몇 분 걸릴 수 있습니다.
+배너 등록 방법
+- 관리자 > 노출 페이지 선택 > 배너 제목 입력
+- 이미지 URL 및 연결 URL 입력 (선택)
+- '+ 배너 공간 추가' 클릭
+- 등록 내용은 현재 브라우저의 localStorage에 저장됩니다.
 
-현재 파일은 프론트엔드 시연용입니다. 실제 회원 인증, 데이터베이스, 광고 결제/정산은 연결되어 있지 않습니다.
+참고
+- 서버가 없는 프론트엔드 데모입니다.
+- 로그인/회원가입, 게시글 작성 및 저장, 실제 광고 통계는 서버 연동 전입니다.
+- 광고 배너 이미지는 외부 이미지 URL을 사용하거나 웹에 업로드한 뒤 URL을 입력하세요.
+- index.html과 assets 폴더는 같은 위치에 있어야 합니다.
