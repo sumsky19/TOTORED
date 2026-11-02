@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#d92336">
 <title>토토레드 | 공식 홈페이지</title>
 <style>
-:root{--red:#d92336;--red-dark:#b8182b;--red-soft:#fff0f2;--ink:#25252b;--muted:#747782;--line:#e8e8ed;--canvas:#f4f4f8;--white:#fff;--shadow:0 5px 18px rgba(35,28,32,.06);--shell:1580px;--sidebar:292px}
+:root{--red:#d92336;--red-dark:#b8182b;--red-soft:#fff0f2;--ink:#25252b;--muted:#747782;--line:#e8e8ed;--canvas:#f4f4f8;--white:#fff;--shadow:0 5px 18px rgba(35,28,32,.06);--shell:1200px;--sidebar:292px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--canvas);color:var(--ink);font-family:Arial,"Noto Sans KR","Malgun Gothic",sans-serif;font-size:14px}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.hidden{display:none!important}
 
 .head{height:82px;background:#fff;border-bottom:1px solid #ececf0;position:sticky;top:0;z-index:50}.head-inner{max-width:var(--shell);height:100%;margin:auto;padding:0 18px;display:flex;align-items:center;gap:22px}.brand{flex:0 0 210px;width:210px;height:70px;display:flex;align-items:center;overflow:hidden}.brand img{display:block;width:205px;height:auto;max-height:68px;object-fit:contain;object-position:left center}.nav{display:flex;align-items:center;justify-content:space-between;gap:clamp(7px,.85vw,15px);flex:1;min-width:0;white-space:nowrap}.nav a{font-size:13px;font-weight:900;padding:13px 0 12px;border-bottom:3px solid transparent;transition:color .15s,border-color .15s}.nav a:hover,.nav a.active{color:var(--red);border-bottom-color:var(--red)}.header-actions{display:flex;gap:7px;flex:0 0 auto}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--red);border-radius:7px;background:var(--red);color:#fff;font-weight:800;padding:9px 14px;min-height:38px;transition:.15s}.btn:hover{background:var(--red-dark);border-color:var(--red-dark)}.btn.outline{background:#fff;color:var(--red)}.btn.soft{background:var(--red-soft);border-color:#f2c5cb;color:var(--red)}.menu-button{display:none;border:1px solid var(--line);background:#fff;color:var(--red);border-radius:9px;width:42px;height:42px;font-size:21px}
@@ -41,6 +41,79 @@
 .home-banner-lead img,.home-banner-card img{display:block;width:100%;height:auto;object-fit:contain}
 .home-banner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 @media(max-width:560px){.home-banner-layout{gap:10px;margin:0 0 16px}.home-banner-grid{grid-template-columns:1fr;gap:10px}.home-banner-lead,.home-banner-card{border-radius:7px}}
+
+/* Banner touch-area refinement: clickable area matches the image bounds exactly */
+.menu-banner{
+  margin-bottom:15px;
+  padding:0;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  background:transparent;
+  overflow:hidden;
+  line-height:0;
+}
+.menu-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:2.8/1;
+  object-fit:contain;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.home-banner-layout{padding:0}
+.home-banner-lead,.home-banner-card{
+  padding:0;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  background:transparent;
+  line-height:0;
+}
+.home-banner-lead:hover,.home-banner-card:hover{
+  transform:none;
+  box-shadow:none;
+}
+.home-banner-lead img,.home-banner-card img{
+  display:block;
+  width:100%;
+  height:auto;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.partner-ad{
+  padding:0;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+}
+.partner-ad>a{
+  display:block;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  line-height:0;
+}
+.partner-ad img,.mobile-entry-banner img{
+  display:block;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  border:0;
+}
+.mobile-entry-banner{
+  padding:0;
+  border:0;
+  border-radius:0;
+  box-shadow:none;
+  line-height:0;
+}
+
 </style>
 </head>
 <body>
