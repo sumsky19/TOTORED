@@ -1,11 +1,6 @@
-GitHub Pages upload instructions
+토토레드 홈페이지 패키지
 
-1. Download this package and unzip it on your computer.
-2. Open the extracted folder. It contains index.html and this README.
-3. In your GitHub repository, open the branch/folder configured for GitHub Pages (often main / root).
-4. Choose Add file > Upload files and upload the extracted index.html (do NOT upload the ZIP itself).
-5. Commit changes.
-6. In Settings > Pages, confirm the publishing source points to the branch and folder where index.html was uploaded.
-
-GitHub Pages looks for index.html at the top level of its publishing source folder.
-This index file is about 566 KB, below GitHub's 25 MiB browser upload limit.
+index.html은 메뉴 배너 이미지를 HTML 내부에 내장한 단일 파일입니다.
+banner-assets 폴더에는 동일 배너의 개별 PNG 파일이 포함되어 있습니다.
+banner-contact-sheet.png는 9개 메인 메뉴 배너 미리보기입니다.
+10_site_report.png는 사이트신고 탭 전용 배너입니다.
