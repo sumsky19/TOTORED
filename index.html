@@ -114,6 +114,20 @@
   line-height:0;
 }
 
+
+/* Partner promotion grid: 3 columns on desktop, 2 columns on mobile */
+.partner-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.partner-ad,.entry-partner-ad{width:100%;aspect-ratio:2.25/1;min-width:0;overflow:hidden;background:transparent}
+.partner-ad>a{display:block;width:100%;height:100%;overflow:hidden}
+.partner-ad img,.entry-partner-ad img{display:block;width:100%;height:100%;object-fit:cover}
+.partner-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;flex-direction:column;gap:4px;background:#fff5f6;color:var(--red)}
+@media(max-width:560px){
+  body.is-home .partner-strip{display:block!important;margin-top:0}
+  body.is-home .mobile-entry-banner{display:none!important}
+  .partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .partner-ad,.entry-partner-ad{aspect-ratio:2.25/1}
+  .partner-ad:nth-child(3){display:block!important}
+}
 </style>
 </head>
 <body>
